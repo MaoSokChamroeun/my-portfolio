@@ -1,0 +1,16 @@
+.container{
+    font-size: 40px;
+    font-weight: 600;
+}
+.textItems{
+    color: #2271f0;
+}
+@media screen and (max-width: 390px){
+    .container{
+        font-size: 25px;
+        text-align: center;
+        font-weight: 600;
+
+    }
+   
+}
