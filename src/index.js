@@ -11,9 +11,11 @@ import Contact from './page/Contact';
 import Project from './page/Project';
 import { ThemeProvider } from './Context/ThemeContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <React.StrictMode>
-    <BrowserRouter className = "main-container">
+    <BrowserRouter>
     <ThemeProvider>
     <Navbar />
     <Routes>

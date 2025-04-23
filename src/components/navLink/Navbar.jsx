@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       <nav>
         <button onClick={toggleBurger} className={style.burger}>
-          {isOpen ? <IoMdClose size={24} /> : <CiMenuBurger size={24} />}
+          {isOpen ? <IoMdClose size={24} style={mode === "dark" ? {color: "white"} : {color: "black"}}/> : <CiMenuBurger size={24} style={mode === "dark" ? {color: "white"} : {color: "black"}}/>}
         </button>
         <ul className={`${style.nav} ${isOpen ? style.open : ''}`}>
           <DarkModeTheme />

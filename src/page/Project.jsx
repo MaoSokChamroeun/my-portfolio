@@ -14,7 +14,7 @@ const Project = () => {
       <div className={style.boxContainer}>
             {projectData.map((item)=>{
               return(
-                <NavLink className={style.cartLink}>
+                <NavLink className={style.cartLink} key={item.id}>
                 <div className={style.card}>
                 <div className={style.box}>
                  <img src={item.image} alt='cart-image' className={style.img} />

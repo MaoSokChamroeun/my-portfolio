@@ -3,6 +3,7 @@
 .container{
     max-width: 1440px;
     margin: auto;
+    max-height: max-content;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     
@@ -14,11 +15,13 @@
     width: 100%;
     display: flex;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
     height: 70vh;
    
 }
 .boxContainer .card{
-    width: 500px;
+    width: 400px;
     height: 600px;
     padding: 10px;
     margin: auto;
@@ -31,7 +34,7 @@
     cursor: pointer;
 }
 .boxContainer .card .box{
-    width: 500px;
+    width: 400px;
     height: 300px;
    
 }
@@ -69,16 +72,16 @@
   }
 @media screen and (max-width: 390px){
     .boxContainer{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        max-width: 1440px;
+        max-height: 100vh;
         gap: 20px;
-        height: 70vh;
+    
+        
        
     }
     .boxContainer .card{
-        width: 300px;
-        height: 600px;
+        max-width: 330px;
+        max-height: 500px;
         margin: auto;
         padding: 10px;
         border: 1px solid gray;
@@ -86,24 +89,25 @@
     }
 
     .img{
-        width: 100%;
+        max-width: 100%;
         background-size: contain;
         background-repeat: no-repeat;
     }
     .boxContainer .card .box{
-        width: 300px;
+        max-width: 330px;
         height: 300px;
         margin: auto;
        
     }
     .info{
-        margin-top: 10px;
+        
         font-size: 13px;
-        display: flex;
-        align-items: center;
         text-decoration: none;
         justify-content: center;
         flex-direction: column;
+    }
+    .titles{
+        margin-top: -50px;
     }
   
 }
@@ -176,5 +180,28 @@
         padding: 10px;
         border: 1px solid gray;
         
+    }
+}
+@media screen and (max-width: 375px){
+    .boxContainer{
+        max-width:  100%;
+        gap: 20px;
+        
+        height: 100vh;
+       
+    }
+    .boxContainer .card{
+        max-width: 330px;
+        max-height: 500px;
+        margin: auto;
+        padding: 10px;
+        border: 1px solid gray;
+        
+    }
+    .boxContainer .card .box{
+        max-width: 330px;
+        max-height: 500px;
+        margin: auto;
+       
     }
 }

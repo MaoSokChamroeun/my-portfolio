@@ -77,3 +77,13 @@ hr{
         text-align: center;
     }
 }
+
+@media screen and (max-width: 768px){
+    .aboutHero{
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        text-align: center;
+    }
+}
